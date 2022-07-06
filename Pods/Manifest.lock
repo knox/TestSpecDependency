@@ -1,0 +1,28 @@
+PODS:
+  - TestSpecDependencyBase (0.0.1)
+  - TestSpecDependencyLib (0.0.1):
+    - TestSpecDependencyBase
+  - TestSpecDependencyLib/AppHost (0.0.1):
+    - TestSpecDependencyBase
+  - TestSpecDependencyLib/Tests (0.0.1):
+    - TestSpecDependencyBase
+    - TestSpecDependencyLib/AppHost
+
+DEPENDENCIES:
+  - TestSpecDependencyBase (from `TestSpecDependencyBase`)
+  - TestSpecDependencyLib (from `TestSpecDependencyLib`)
+  - TestSpecDependencyLib/Tests (from `TestSpecDependencyLib`)
+
+EXTERNAL SOURCES:
+  TestSpecDependencyBase:
+    :path: TestSpecDependencyBase
+  TestSpecDependencyLib:
+    :path: TestSpecDependencyLib
+
+SPEC CHECKSUMS:
+  TestSpecDependencyBase: f48bd86da685bd3bc1d4e74cc2bfedbdf4a87f0a
+  TestSpecDependencyLib: 2bf3b7f2e0e1ca42c0f09bf82797065ee14350a1
+
+PODFILE CHECKSUM: 1c6d38027dcab443d441476aa6410894eca10762
+
+COCOAPODS: 1.11.3

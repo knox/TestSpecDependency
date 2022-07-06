@@ -1,0 +1,45 @@
+{
+  "name": "TestSpecDependencyLib",
+  "version": "0.0.1",
+  "summary": "A short description of TestSpecDependencyLib.",
+  "homepage": "https://github.com/knox/TestSpecDependency",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": "Mickey Knox",
+  "source": {
+    "git": "https://github.com/Knox/TestSpecDependency.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "14.1"
+  },
+  "swift_versions": "5.4",
+  "source_files": "TestSpecDependencyLib/Classes/**/*",
+  "dependencies": {
+    "TestSpecDependencyBase": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "TestSpecDependencyLib/Tests/**/*",
+      "requires_app_host": true,
+      "app_host_name": "TestSpecDependencyLib/AppHost",
+      "dependencies": {
+        "TestSpecDependencyLib/AppHost": [
+
+        ]
+      }
+    }
+  ],
+  "appspecs": [
+    {
+      "name": "AppHost",
+      "source_files": "TestSpecDependencyLib/AppHost/**"
+    }
+  ],
+  "swift_version": "5.4"
+}
